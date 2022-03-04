@@ -158,3 +158,14 @@ Print the result on the terminal: fps, position, confidence and label, then writ
 [INFO] [2022-03-04 09:50:42:932767][ObjectDetection.cpp Postprocess:258] score is 85
 [INFO] [2022-03-04 09:50:42:932777][ObjectDetection.cpp Postprocess:259] label is person 85%
 ```
+
+## Authors
+Kubilay Tuna
+
+
+## Copyright
+Huawei Technologies Co., Ltd
+
+
+## License
+Apache License, Version 2.0
