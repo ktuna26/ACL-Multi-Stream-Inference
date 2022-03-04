@@ -13,6 +13,9 @@ add_definitions(-DASCEND_MODULE_USE_ACL)
 if(NOT DEFINED ENV{ASCEND_HOME})
     message(FATAL_ERROR "please define environment variable:ASCEND_HOME")
 endif()
+if(NOT DEFINED ENV{OPENCV_PATH})
+    message(FATAL_ERROR "please define environment variable:OPENCV_PATH")
+endif()
 
 # Compatible with the scenario where the Hisilicon version is installed
 SET(ASCEND_VERSION "")
@@ -38,7 +41,7 @@ set(HEADER_FILE_DIR
     ${ASCEND_BASE_DIR}
     ${ASCEND_BASE_DIR}/Framework
     ${PROJECT_SRC_ROOT}/inc
-    /home/kubilay/opencv/include
+    $ENV{OPENCV_PATH}/include/opencv4
 )
 include_directories(${HEADER_FILE_DIR})
 
@@ -56,7 +59,7 @@ set(SOURCE_FILE
 # set the share library directory
 set(ACL_LIB_DIR
     $ENV{ASCEND_HOME}/${ASCEND_VERSION}/${ARCH_PATTERN}/acllib/lib64/stub
-    /home/kubilay/opencv/lib
+    $ENV{OPENCV_PATH}/lib
 )
 link_directories(${ACL_LIB_DIR})
 
