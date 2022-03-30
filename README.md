@@ -1,4 +1,4 @@
-# ACL Single Stream Inference
+# ACL Multi Stream Inference
 
 ## Introduction
 This sample demonstrates how the `ACL Single Stream Inference` program to use the OpenCV and ACL to perform the `yolov3 (caffe)` object detection.
