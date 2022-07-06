@@ -55,7 +55,7 @@ export ARCH_PATTERN=x86_64-linux
 ```
 
 #### Build Opencv from Source
-Source download address: https://github.com/FFmpeg/FFmpeg/releases
+Source download address: https://github.com/opencv/opencv/releases
 
 To compile and install OpenCV with source code, you can refer to Linuxize: https://linuxize.com/post/how-to-install-opencv-on-ubuntu-18-04/
 
